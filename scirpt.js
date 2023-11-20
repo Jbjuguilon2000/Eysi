@@ -1,5 +1,5 @@
 function clickmetoremove() {
-  $(".thisBtn").attr("class", "");
+  $(".thisBtn").attr("class", "thisBtn btn btn-outline-secondary border-none");
 }
 
 function nonono() {
