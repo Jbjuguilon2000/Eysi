@@ -21,3 +21,9 @@ function nonono() {
   button.style.left = newPositionX + "px";
   button.style.top = newPositionY + "px";
 }
+
+function izAYes() {
+  $(".NewText").text("I LOVE YOU! ALLAYSA CAMILLE D. VILLANUEVA");
+
+  location.href = "#ItsAYes";
+}
