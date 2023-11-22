@@ -1,5 +1,5 @@
 function clickmetoremove() {
-  $(".thisBtn").removeAttr("disabled");
+  $(".thisBtn").removeAttr("hidden");
 }
 
 function nonono() {
