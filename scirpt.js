@@ -2,6 +2,7 @@ function clickmetoremove() {
   $(".thisBtn").removeAttr("hidden");
 }
 
+var mouseOverCount = 0;
 function nonono() {
   var button = document.getElementById("moveButton");
 
@@ -20,6 +21,14 @@ function nonono() {
   // Set the new position
   button.style.left = newPositionX + "px";
   button.style.top = newPositionY + "px";
+
+  mouseOverCount++;
+  if (mouseOverCount == 5) {
+    $(".addText").text("Please?");
+  }
+  if (mouseOverCount == 10) {
+    $(".addText").text("Please Please Please?");
+  }
 }
 
 function izAYes() {
