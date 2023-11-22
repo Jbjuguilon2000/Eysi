@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
   height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 .position-all-center {
@@ -35,4 +38,16 @@ section {
 
 #moveButton {
   position: relative;
+}
+
+.hiddenmsg {
+  text-align: center;
+}
+
+.wybmyg h1 {
+  font-size: 3rem;
+}
+
+.Images {
+  height: 100%;
 }

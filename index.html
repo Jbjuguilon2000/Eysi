@@ -1,166 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Your Webpage Title</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Your Webpage Title</title>
+    <!-- Latest Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Latest Bootstrap Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Latest Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <!-- Latest Bootstrap Icons CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Terms and Conditions</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h5>Article 1: Communication Clause</h5>
-          <br>
-          <h6>Section 1.1: Video Calls</h6>
-          <li>
-            Both parties agree to engage in regular video calls to bridge the physical gap and savor the joy of seeing each other's smiles.
-            Video calls may be subject to spontaneous laughter, and occasional virtual cuddles.
-          </li>
-          <br>
-          <h6>Section 1.2: Chats and Calls</h6>
-          <li>
-            A minimum of one thoughtful chat message per day is required to keep the love alive.
-            Random calls are permitted at any time, especially during moments of nostalgia or excessive cuteness.
-          </li>
-          <br>
-          <h5>Article 2: Trust and Transparency</h5>
-          <br>
-          <h6>Section 2.1: Trust</h6>
-          <li>
-            Both parties shall trust each other implicitly, recognizing that trust is the foundation of our love. Violation of this clause may result in cuddle penalties.
-          </li>
-          <br>
-          <h6>Section 2.2: Transparency</h6>
-          <li>
-            Any changes in schedule, sudden urges to watch a Movie without the other, or cravings for local cuisine must be communicated promptly.
-          </li>
-          <br>
-          <h5>Article 3: Visitation Rights</h5>
-          <br>
-          <h6>Section 3.1: Physical Meetings</h6>
-          <li>
-            The parties involved agree to make every effort to meet in person at least twice a year, with additional visits encouraged and celebrated.</li>
-          <br>
-          <h6>Section 3.2: Airport Protocol</h6>
-          <li>
-            The party arriving at the airport is entitled to a romantic welcome, including but not limited to hugs, kisses, and a sign declaring undying love.
-          </li>
-          <br>
-          <h6>Section 2.2: Transparency</h6>
-          <li>
-            Any changes in schedule, sudden urges to watch a Movie without the other, or cravings for local cuisine must be communicated promptly.
-          </li>
-          <br>
-          <h5>Article 4: Patience and Understanding</h5>
-          <br>
-          <h6>Section 4.1: Time Zones</h6>
-          <li>
-            Both parties acknowledge the existence of time zones and agree to be patient with each other's schedules, understanding that sleep is a biological necessity.
-          </li>
-          <br>
-          <h6>Section 4.2: Emotional Support</h6>
-          <li>
-            In times of emotional turbulence, both parties pledge to provide virtual shoulders to lean on, supplemented by generous servings of empathy and understanding.
-          </li>
-          <br>
-          <h5>Article 5: Surprise Gestures</h5>
-          <br>
-          <h6>Section 5.1: Surprise Packages</h6>
-          <li>
-            At least once a year, surprise packages containing love letters, tokens of affection, or local delicacies are to be sent to each other.
-          </li>
-          <br>
-          <h6> Section 5.2: Virtual Surprises</h6>
-          <li>
-            Surprise virtual dates, movie nights, or online gaming sessions are encouraged to keep the relationship vibrant.
-            In witness whereof, let our love endure the miles and soar beyond the limitations of geography. With these terms and conditions, we affirm our commitment to each other, bound by the unwavering belief that love knows no distance.
-          </li>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            Close
-          </button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="clickmetoremove()">
-            I Agree
-          </button>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Terms and Conditions
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Article 1: Communication Clause</h5>
+            <br />
+            <h6>Section 1.1: Video Calls</h6>
+            <li>
+              Both parties agree to engage in regular video calls to bridge the
+              physical gap and savor the joy of seeing each other's smiles.
+              Video calls may be subject to spontaneous laughter, and occasional
+              virtual cuddles.
+            </li>
+            <br />
+            <h6>Section 1.2: Chats and Calls</h6>
+            <li>
+              A minimum of one thoughtful chat message per day is required to
+              keep the love alive. Random calls are permitted at any time,
+              especially during moments of nostalgia or excessive cuteness.
+            </li>
+            <br />
+            <h5>Article 2: Trust and Transparency</h5>
+            <br />
+            <h6>Section 2.1: Trust</h6>
+            <li>
+              Both parties shall trust each other implicitly, recognizing that
+              trust is the foundation of our love. Violation of this clause may
+              result in cuddle penalties.
+            </li>
+            <br />
+            <h6>Section 2.2: Transparency</h6>
+            <li>
+              Any changes in schedule, sudden urges to watch a Movie without the
+              other, or cravings for local cuisine must be communicated
+              promptly.
+            </li>
+            <br />
+            <h5>Article 3: Visitation Rights</h5>
+            <br />
+            <h6>Section 3.1: Physical Meetings</h6>
+            <li>
+              The parties involved agree to make every effort to meet in person
+              at least twice a year, with additional visits encouraged and
+              celebrated.
+            </li>
+            <br />
+            <h6>Section 3.2: Airport Protocol</h6>
+            <li>
+              The party arriving at the airport is entitled to a romantic
+              welcome, including but not limited to hugs, kisses, and a sign
+              declaring undying love.
+            </li>
+            <br />
+            <h6>Section 2.2: Transparency</h6>
+            <li>
+              Any changes in schedule, sudden urges to watch a Movie without the
+              other, or cravings for local cuisine must be communicated
+              promptly.
+            </li>
+            <br />
+            <h5>Article 4: Patience and Understanding</h5>
+            <br />
+            <h6>Section 4.1: Time Zones</h6>
+            <li>
+              Both parties acknowledge the existence of time zones and agree to
+              be patient with each other's schedules, understanding that sleep
+              is a biological necessity.
+            </li>
+            <br />
+            <h6>Section 4.2: Emotional Support</h6>
+            <li>
+              In times of emotional turbulence, both parties pledge to provide
+              virtual shoulders to lean on, supplemented by generous servings of
+              empathy and understanding.
+            </li>
+            <br />
+            <h5>Article 5: Surprise Gestures</h5>
+            <br />
+            <h6>Section 5.1: Surprise Packages</h6>
+            <li>
+              At least once a year, surprise packages containing love letters,
+              tokens of affection, or local delicacies are to be sent to each
+              other.
+            </li>
+            <br />
+            <h6>Section 5.2: Virtual Surprises</h6>
+            <li>
+              Surprise virtual dates, movie nights, or online gaming sessions
+              are encouraged to keep the relationship vibrant. In witness
+              whereof, let our love endure the miles and soar beyond the
+              limitations of geography. With these terms and conditions, we
+              affirm our commitment to each other, bound by the unwavering
+              belief that love knows no distance.
+            </li>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              onclick="clickmetoremove()"
+            >
+              I Agree
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <section id="ItsAYes">
-    <div class="position-all-center">
-      <h1 class="NewText">Hi! AC</h1>
-    </div>
-  </section>
-  <section id="Story">
-    <div class="position-all-center">
-      <h1>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
-        eligendi esse eum perspiciatis blanditiis incidunt magni! Ipsa
-        explicabo libero, voluptatum, saepe obcaecati temporibus iure sint
-        pariatur animi odit error nulla?
-      </h1>
-    </div>
-  </section>
-  <section id="Meaning">
-    <div class="position-all-center">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-        perspiciatis asperiores sequi! At maiores, veritatis consequuntur
-        minus officiis aut explicabo accusantium accusamus quo recusandae sed
-        ea nam eius iste quos.
-      </h1>
-    </div>
-  </section>
-  <section id="Happiness">
-    <div class="position-all-center">
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum delectus
-        inventore autem sit, ea blanditiis non aliquid esse quas repellendus
-        nesciunt doloribus ullam omnis! Hic, iste. Quidem nulla repellendus
-        nisi!
-      </h1>
-    </div>
-  </section>
-  <section id="Question">
-    <div class="position-all-center">
-      <div class="wybmyg">
-       <h1>Will You be my Girlfriend?</h1>
-        <input type="checkbox" name="" data-bs-toggle="modal" data-bs-target="#exampleModal" id="AgreeTermsAgreement" />
-        I Agree on terms and agreements
-        <div class="d-flex justify-content-evenly">
-          <button class="thisBtn btn btn-outline-secondary border-none d-none" onclick="izAYes()">
-            Yes
-          </button>
-          <button class="thisBtn btn btn-outline-secondary border-none d-none" id="moveButton" onmouseover="nonono()">
-            No
-          </button>
+    <section id="ItsAYes">
+      <div class="position-all-center">
+        <h1 class="hiddenmsg d-none">
+          I <span class="text-danger">LOVE</span> YOU!
+        </h1>
+        <h4 class="hiddenmsg d-none">Allaysa Camille Villanueva</h4>
+        <img src="./assets/Panda6.gif" class="hiddenmsg d-none" alt="panda" style="margin: 0px 50px;">
+        <h1 class="NewText text-center">Hi! AC</h1>
+        <img src="./assets/Panda2.gif" alt="panda" style="margin: 0px 50px;">
+      </div>
+    </section>
+    <section id="Story">
+      <div class="position-all-center">
+        <h1>
+          Hi its been a while since we met online. Thanks to your Friends,
+          Valorant, and Social Media.
+        </h1>
+        <img src="./assets/Panda5.gif" alt="panda" style="margin: 0px 35%; height: 200px;">
+      </div>
+    </section>
+    <section id="Meaning">
+      <div class="position-all-center">
+        <h1 class="">
+          Lot has change since Ive known you. and I wanna express my Thank you
+          from all the support and help you gave to me during my down days.
+        </h1>
+        <br />
+        <h1 class="">
+          You've always been there for me even Ups and Downs of my life events
+          ever since I met you.
+        </h1>
+        <img src="./assets/Panda3.gif" alt="panda" style="margin: 0px 35%; height: 200px;">
+      </div>
+    </section>
+    <section id="Question">
+      <div class="position-all-center">
+        <div class="wybmyg">
+          <img src="./assets/Panda.gif" alt="panda" style="margin: 0px 35%; height: 200px;">
+          <h1>Will You be my Girlfriend?</h1>
+          <input
+            type="checkbox"
+            name=""
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="AgreeTermsAgreement"
+          />
+          I Agree on terms and agreements
+          <div class="d-flex justify-content-evenly">
+            <button
+              class="thisBtn btn btn-outline-secondary border-none"
+              onclick="izAYes()"
+              hidden
+            >
+              Yes
+            </button>
+            <button
+              class="thisBtn btn btn-outline-secondary border-none"
+              id="moveButton"
+              onmouseover="nonono()"
+              hidden
+            >
+              No
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Latest jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- Latest Bootstrap JS Bundle (Popper included) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="scirpt.js"></script>
-</body>
-
+    <!-- Latest jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Latest Bootstrap JS Bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scirpt.js"></script>
+  </body>
 </html>

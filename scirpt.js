@@ -1,5 +1,5 @@
 function clickmetoremove() {
-  $(".thisBtn").attr("class", "thisBtn btn btn-outline-secondary border-none");
+  $(".thisBtn").removeAttr("disabled");
 }
 
 function nonono() {
@@ -23,7 +23,12 @@ function nonono() {
 }
 
 function izAYes() {
-  $(".NewText").text("I LOVE YOU! ALLAYSA CAMILLE D. VILLANUEVA");
+  $(".hiddenmsg").attr("class", "hiddenmsg");
+  $(".NewText").attr("class", "d-none");
+  $("#Story").attr("class", "d-none");
+  $("#Meaning").attr("class", "d-none");
+  $("#Happiness").attr("class", "d-none");
+  $("#Question").attr("class", "d-none");
 
   location.href = "#ItsAYes";
 }
